@@ -1,38 +1,264 @@
-.App {
+.App{
+  width: 90%;
+  margin: auto;
+
+}
+.header{
+  background: url(../public/galaxy-s23-ultra-highlights-kv.png) no-repeat center top;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+.header h1{
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  color: white;
+  font-size: 80px;
+}
+.description{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.description p{
+  margin: 10px 0;
+  font-size: 22px;
+}
+hr{
+  margin: 50px 0 0px;
+  color: black;
+}
+h2{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+}
+.cards{
+  display: flex;
+  margin: 20px 10px;
+}
+.card{
+  /* height: 700px; */
+ position: relative;
+  /* display: flex; */
+  margin: 20px 10px 30px;
+  width: 33%;
+  padding: 10px;
+  border-radius: 7px;
+}
+.card:hover{
+  box-shadow: 5px 5px 10px rgba(134, 134, 134, 0.566);
+  transition: .5s;}
+.card >img{
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  border-radius: 4px;
+  object-fit: contain;
+  
+}
+.card h3{
+  font-size: 23px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+  text-align: center;
+}
+.card p{
+  font-size: 18px;
+  padding: 15px;
+  margin: 0px 0px 20px;
+  text-align: left;
+}
+.card a{
+  text-decoration: none;
+  right: 20px;
+  /* position: absolute; */
+  bottom: 20px;
+  float: right;
+  text-align: center;
+  width: 170px;
+  height: 40px;
+  padding: 10px;
+  background-color: #343434;
+  color: #eee;
+  font: 15px;
+  border: none;
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.colors{
+  padding: 10px 0;
+  color: #eee;
+  background-color: #343434;
+  text-align: center;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.colors h2{
+  margin-top: 20px;
+}
+.color{
+  margin-top: 30px;
+  display: flex;
+}
+.color-block{
+  width: 50%;
+  padding: 20px;
+}
+.color-block.lt{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.color-block img{
+  width: 100%;
+}
+.color-block.lt img{
+  margin-top: 40px;
+  width: 100%;
+}
+.color-block.lt h3{
+  margin: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.colorname{
+  margin: 40px auto;
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.color-block a{
+  text-decoration: none;
+  right: 20px;
+  /* position: absolute; */
+  bottom: 20px;
+  float: right;
+  text-align: center;
+  width: 170px;
+  height: 40px;
+  padding: 10px;
+  color: #343434;
+  background-color: #eee;
+  font: 15px;
+  border: none;
+  border-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.color-circles{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: black;
+}
+.green{
+background-color: rgb(95, 100, 90);
+}
+.phantomblack{
+background-color: rgb(33, 30, 22);
+}
+.lavender{
+background-color: #d4c7d9;
+}
+.white{
+background-color: #f0eae0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+footer{
+ margin: 20px;
+ display: flex;
+ justify-content: space-around;
+ font: 30px;
+}
+footer a{
+  text-decoration: none;
+  color: #343434;
+}
+@media screen and (max-width:2000px) {
+  .header{
+    height: 600px;
   }
-  to {
-    transform: rotate(360deg);
+  .header h1{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: white;
+    font-size: 60px;
+  }
+  
+
+  
+}
+@media screen and (max-width:1500px) {
+  .header{
+    height: 500px;
+  }
+  .header h1{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: white;
+    font-size: 50px;
+  }
+  /* .card{
+    height: 650px;
+  } */
+  .card >img{
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    
+  }
+}
+@media screen and (max-width:992px) {
+  .card >img{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    
+    
+  }
+  .colors{
+    padding-top: 40px;
+  }
+  .color{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .color-block{
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width:768px) {
+  .header{
+    align-items: flex-end;
+    justify-content: center;
+    height: 500px;
+  }
+  .header h1{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: white;
+    font-size: 50px;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+  .card{
+    /* display: flex; */
+    margin: 20px 10px;
+    width: 100%;
+    padding: 20px;
+    /* border-radius: 40px; */
+  }
+  
+  .card >img{
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    
   }
 }
