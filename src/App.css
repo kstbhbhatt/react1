@@ -39,7 +39,7 @@ h2{
   /* height: 700px; */
  position: relative;
   /* display: flex; */
-  margin: 20px 10px 30px;
+  margin-bottom:30px;
   width: 33%;
   padding: 10px;
   border-radius: 7px;
@@ -248,7 +248,7 @@ footer a{
   }
   .card{
     /* display: flex; */
-    margin: 20px 10px;
+    /* margin: 20px 10px; */
     width: 100%;
     padding: 20px;
     /* border-radius: 40px; */
