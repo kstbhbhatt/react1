@@ -308,6 +308,7 @@ footer a{
 }
 @media screen and (max-width:900px) {
   .hamburg.d-none{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,7 +322,7 @@ footer a{
     background-color: white;
     position: absolute;
     left: 0;
-    width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
