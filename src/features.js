@@ -21,12 +21,11 @@ const card = [
     }
 ]
 
-const specs = [
-    {   sr : 1,
+const speclist = 
+    { 
         Name: "Samsung Galaxy S23 Ultra",
-        Price: 100999,
+        Price: "Rs 120999",
         CodeName: "s23 Ultra",
-        SerialNumber: 234,
         Dimensions: "163.4 x 78.1 x 8.9 mm (6.43 x 3.07 x 0.35 in)",
         Weight:"234 g (8.25 oz)",
         Build: "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame",
@@ -42,7 +41,14 @@ const specs = [
         <br/>12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55", 1.4µm, Dual Pixel PDAF, Super Steady video`,
         SelfieCamera: `12 MP, f/2.2, 26mm (wide), Dual Pixel PDAF`,
         Battery : `12 MP, f/2.2, 26mm (wide), Dual Pixel PDAF`,
-    },
-]
+    }
 
-export default card
+const specName = Object.keys(speclist)
+const specDescp = Object.values(speclist)
+const specsS23 = []
+for (let i = 0; i <specDescp.length; i++){
+    specsS23.push({[specName[i]]:specDescp[i]})
+}
+
+export default card ;
+export {specsS23};

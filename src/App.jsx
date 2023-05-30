@@ -6,6 +6,7 @@ import Feature from "./Feature";
 import Colors from "./Colors";
 import Footer from "./Footer";
 import Header from "./Header";
+import Specs from "./Specs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <hr />
       <Feature />
       <Colors />
+      <Specs />
       <Footer />
     </div>
   );
