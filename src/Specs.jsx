@@ -12,7 +12,7 @@ function Specs(){
         console.log(value.value)
         ))
     return(
-        <div>
+        <div id="specs">
             <h2>Specs</h2>
             <table>
                 <thead>

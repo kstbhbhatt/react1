@@ -161,7 +161,7 @@ h2{
 0px 25px 20px -20px rgba(0,0,0,0.45),
 -25px 0px 20px -20px rgba(0,0,0,0.45);
   }
-.card .front>img{
+.card img{
   background-color: black;
   width: 100%;
   height: 400px;
@@ -346,7 +346,7 @@ tr:last-child > th{
   /* .card{
     height: 650px;
   } */
-  .card >img{
+  .card img{
     background-color: black;
     width: 100%;
     height: 250px;
@@ -355,7 +355,7 @@ tr:last-child > th{
   }
 }
 @media screen and (max-width:992px) {
-  .card >img{
+  .card img{
     background-color: black;
     width: 100%;
     height: 200px;
@@ -449,21 +449,29 @@ tr:last-child > th{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 20px 10px;
+    margin: 20px 5px;
   }
   .card{
     /* display: flex; */
     /* margin: 20px 10px; */
-    width: 80%;
-    padding: 20px;
+    width: 95%;
+    padding: 5px;
     /* border-radius: 40px; */
   }
   
-  .card >img{
+  .card img{
     background-color: black;
     width: 100%;
     height: 500px;
     object-fit: contain;
     
+  }
+  table{
+    width: 95%;
+  }
+}
+@media screen and (max-width:500px) {
+  .card img{
+    height: 250px;
   }
 }

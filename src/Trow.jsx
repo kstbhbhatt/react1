@@ -8,8 +8,8 @@ function Trow(props){
     })
     return(
         <tr>
-            <th data-aos="fade-right">{props.name}</th>
-            <td data-aos="fade-left">{`${props.descp}`}</td>
+            <th data-aos="zoom-in">{props.name}</th>
+            <td data-aos="zoom-in">{`${props.descp}`}</td>
         </tr>
     )
 }

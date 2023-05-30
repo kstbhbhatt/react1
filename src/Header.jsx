@@ -4,7 +4,8 @@ import React from "react";
 function Header(){
     const [ham, toggleHam] = React.useState(false)
     function toggleNav(){
-        toggleHam((prevValue)=>(!prevValue))
+        setTimeout( toggleHam((prevValue)=>(!prevValue)), 500)
+       
     }
 
     return(
@@ -14,13 +15,13 @@ function Header(){
                 <button onClick={toggleNav} className ={ham ?"hamburg show d-none": "hamburg d-none"}><div className="hamburger"></div></button>
                 <div style={ham?({top:"70px"}):({top:"-500px"})} className="lists">
                 <ul className="navbar-list">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#colors">Colors</a></li>
-                    <li><a href="#">Specs</a></li>
+                    <li><a onClick={toggleNav} href="#features">Features</a></li>
+                    <li><a onClick={toggleNav} href="#colors">Colors</a></li>
+                    <li><a onClick={toggleNav} href="#specs">Specs</a></li>
                 </ul>
                 <ul className="navbar-signup">
-                    <li><a href="#features">Sign Up</a></li>
-                    <li><a href="#colors">Contact Us</a></li>
+                    <li><a onClick={toggleNav} href="#">Sign Up</a></li>
+                    <li><a onClick={toggleNav}href="#">Contact Us</a></li>
                 </ul>
                 </div>
                 
