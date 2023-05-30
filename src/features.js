@@ -21,4 +21,28 @@ const card = [
     }
 ]
 
+const specs = [
+    {   sr : 1,
+        Name: "Samsung Galaxy S23 Ultra",
+        Price: 100999,
+        CodeName: "s23 Ultra",
+        SerialNumber: 234,
+        Dimensions: "163.4 x 78.1 x 8.9 mm (6.43 x 3.07 x 0.35 in)",
+        Weight:"234 g (8.25 oz)",
+        Build: "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame",
+        DisplayType: "Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak)",
+        ScreenSize : "6.8 inches, 114.7 cm2 (~89.9% screen-to-body ratio)" ,
+        Resolution: "1440 x 3088 pixels, 19.3:9 ratio (~500 ppi density)",
+        Protection : "Corning Gorilla Glass Victus 2",
+        OS: "Android 13, One UI 5.1",
+        Chipset: "Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm)",
+        MainCameras: `200 MP, f/1.7, 24mm (wide), 1/1.3", 0.6µm, multi-directional PDAF, Laser AF, OIS
+       <br/> 10 MP, f/4.9, 230mm (periscope telephoto), 1/3.52", 1.12µm, Dual Pixel PDAF, OIS, 10x optical zoom
+       <br/> 10 MP, f/2.4, 70mm (telephoto), 1/3.52", 1.12µm, Dual Pixel PDAF, OIS, 3x optical zoom
+        <br/>12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55", 1.4µm, Dual Pixel PDAF, Super Steady video`,
+        SelfieCamera: `12 MP, f/2.2, 26mm (wide), Dual Pixel PDAF`,
+        Battery : `12 MP, f/2.2, 26mm (wide), Dual Pixel PDAF`,
+    },
+]
+
 export default card

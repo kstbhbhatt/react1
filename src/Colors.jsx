@@ -5,46 +5,28 @@ function Colors(){
         url:"green",
         name:"Green"
     })
-    function showGreen(){
+    function showPics(e){
+        let name = e.target.getAttribute('data-name')
+        let url = e.target.getAttribute('data-url')
         changeColorS23({
-            url:"green",
-            name:"Green"
+            url:url,
+            name:name
         })
         console.log(colorS23)
     }
-    function showPhantomBlack(){
-        changeColorS23({
-            url:"phantom-black",
-            name:"Phantom Black"
-        })
-        console.log(colorS23)
-    }
-    function showLavender(){
-        changeColorS23({
-            url:"lavender",
-            name:"Lavender"
-        })
-        console.log(colorS23)
-    }
-    function showWhite(){
-        changeColorS23({
-            url:"cream",
-            name:"White"
-        })
-        console.log(colorS23)
-    }
+    
     return(
-        <div className="colors">
+        <div  id="colors" className="colors">
             <h2>Color Options</h2>
             <div className="color">
             <div className="color-block lt">
                 <img src={`https://images.samsung.com/in/smartphones/galaxy-s23-ultra/images/galaxy-s23-ultra-highlights-colors-${colorS23.url}-side.jpg`} />
                 <h3>{colorS23.name}</h3>
                 <div className="colorname">
-                    <div onClick={showGreen} className="green  color-circles"></div>
-                    <div onClick={showPhantomBlack} className="phantomblack color-circles"></div>
-                    <div onClick={showLavender} className="lavender color-circles"></div>
-                    <div onClick={showWhite} className="white color-circles"></div>
+                    <div data-name= "Green" data-url="green" value="green" onClick={showPics} className="green  color-circles"></div>
+                    <div data-name= "Phantom Black" data-url="phantom-black" onClick={showPics} className="phantomblack color-circles"></div>
+                    <div data-name= "Lavender" data-url="lavender" onClick={showPics} className="lavender color-circles"></div>
+                    <div data-name= "Cream" data-url="cream" onClick={showPics} className="white color-circles"></div>
                 </div>
                 <a href="https://www.samsung.com/in/smartphones/galaxy-s23-ultra/buy" target="_blank">Buy Now</a>
             </div>

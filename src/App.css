@@ -1,16 +1,89 @@
 .App{
-  width: 90%;
+  /* width: 90%; */
   margin: auto;
 
 }
-.header{
+header{
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+  background-color: #343434;
+  color: #eee;
+}
+button.hamburg{
+  display: block;
+  margin: 0 20px;
+  width: 30px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.hamburg.d-none{
+  display: none;
+}
+div.hamburger{
+  display: block;
+  border-radius: 2px;
+  height: 4px;
+  width: 30px;
+  background-color: #eee;
+}
+div.hamburger::before{
+  margin-top: -8px;
+  position: absolute;
+  left: 0;
+  content: '';
+  height: 4px;
+  width: 30px;
+  background-color: #eee;
+  border-radius: 2px;
+}
+div.hamburger::after{
+  margin-top: 8px;
+  position: absolute;
+  left: 0;
+  content: '';
+  height: 4px;
+  width: 30px;
+  background-color: #eee;
+  border-radius: 2px;
+}
+nav{
+  padding: 0 10px;
+  /* justify-content: space-between; */
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+nav .lists{
+  justify-content: space-between;
+  margin: auto;
+  flex-grow: 2;
+  display: flex;
+}
+nav .lists ul{
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+nav .lists ul li{
+  margin: 0 10px;
+}
+nav .lists ul li a{
+  text-decoration: none;
+  color:white
+}
+.heading{
   background: url(../public/galaxy-s23-ultra-highlights-kv.png) no-repeat center top;
   background-size: cover;
   height: 700px;
   display: flex;
   align-items: center;
 }
-.header h1{
+.heading h1{
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   color: white;
   font-size: 80px;
@@ -109,11 +182,11 @@ h2{
   align-items: center;
 }
 .color-block img{
-  width: 100%;
+  width: 90%;
 }
 .color-block.lt img{
   margin-top: 40px;
-  width: 100%;
+  width: 90%;
 }
 .color-block.lt h3{
   margin: 30px;
@@ -176,10 +249,11 @@ footer a{
   color: #343434;
 }
 @media screen and (max-width:2000px) {
-  .header{
+  .heading{
+   
     height: 600px;
   }
-  .header h1{
+  .heading h1{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     color: white;
     font-size: 60px;
@@ -189,10 +263,11 @@ footer a{
   
 }
 @media screen and (max-width:1500px) {
-  .header{
+  .heading{
+    align-items: flex-end;
     height: 500px;
   }
-  .header h1{
+  .heading h1{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     color: white;
     font-size: 50px;
@@ -230,13 +305,67 @@ footer a{
     padding: 20px;
   }
 }
+@media screen and (max-width:900px) {
+  .hamburg.d-none{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav{
+    justify-content: space-between;
+  }
+  nav .lists{
+    
+    background-color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  nav .lists ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  nav .lists ul li{
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+    border-bottom: 1px solid #343434;
+  }
+  nav .lists ul li a{
+    color: #343434;
+  }
+  button.hamburg{
+    /* margin-right: 30px; */
+    width: 30px;
+  }
+  .show div.hamburger{
+    border-radius: 2px;
+    height: 4px;
+    width: 30px;
+    background-color: transparent;
+  }
+  .show div.hamburger::before{
+    transform: rotate(403deg);
+    transition: ease-in;
+    margin-top: 0;
+  }
+  .show div.hamburger::after{
+    transform: rotate(-45deg) ;
+    transition: ease-in;
+    margin-top: 0;
+  }
+}
 @media screen and (max-width:768px) {
-  .header{
+  .heading{
     align-items: flex-end;
     justify-content: center;
     height: 500px;
   }
-  .header h1{
+  .heading h1{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     color: white;
     font-size: 50px;
