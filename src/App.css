@@ -58,6 +58,10 @@ nav{
   align-items: center;
   display: flex;
 }
+nav h3 a{
+  text-decoration: none;
+  color: #eee;
+}
 nav .lists{
   justify-content: space-between;
   margin: auto;
@@ -343,6 +347,9 @@ tr:last-child > th{
   background-color: #eee;
   height: 90%;
   border-radius: 5px;
+}
+.form-div h2{
+  font-size: 30px;
 }
 .close-pop-up{
   text-align: center;
