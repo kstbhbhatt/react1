@@ -7,6 +7,8 @@ import Colors from "./Colors";
 import Footer from "./Footer";
 import Header from "./Header";
 import Specs from "./Specs";
+import ContactUs from "./ContactUs";
+import SignUp from "./SignUp";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Feature />
       <Colors />
       <Specs />
+      <ContactUs />
+      <SignUp />
       <Footer />
     </div>
   );

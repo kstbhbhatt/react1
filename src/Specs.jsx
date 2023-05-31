@@ -8,9 +8,6 @@ function Specs(){
     React.useEffect(()=> {
         Aos.init({duration:1000})
     })
-    specsS23.map((value, index)=>(
-        console.log(value.value)
-        ))
     return(
         <div id="specs">
             <h2>Specs</h2>

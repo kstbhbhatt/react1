@@ -7,6 +7,18 @@ function Header(){
         setTimeout( toggleHam((prevValue)=>(!prevValue)), 500)
        
     }
+    function openContactUs(e){
+        document.querySelector('#contact-form-close').click()
+        toggleHam((prevValue)=>(!prevValue))
+        e.preventDefault()
+
+    }
+    function openSignUp(e){
+        document.querySelector('#signup-form-close').click()
+        toggleHam((prevValue)=>(!prevValue))
+        e.preventDefault()
+
+    }
 
     return(
         <header>
@@ -20,8 +32,8 @@ function Header(){
                     <li><a onClick={toggleNav} href="#specs">Specs</a></li>
                 </ul>
                 <ul className="navbar-signup">
-                    <li><a onClick={toggleNav} href="#">Sign Up</a></li>
-                    <li><a onClick={toggleNav}href="#">Contact Us</a></li>
+                    <li><a onClick={openSignUp} href="#">Sign Up</a></li>
+                    <li><a onClick={openContactUs}href="#">Contact Us</a></li>
                 </ul>
                 </div>
                 
