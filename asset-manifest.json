@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/react1/static/css/main.aee10020.css",
+    "main.css": "/react1/static/css/main.1c9da018.css",
     "main.js": "/react1/static/js/main.fc568a13.js",
     "static/js/787.309590f4.chunk.js": "/react1/static/js/787.309590f4.chunk.js",
-    "static/media/galaxy-s23-ultra-highlights-kv.png": "/react1/static/media/galaxy-s23-ultra-highlights-kv.377c0051e3904a7062c3.png",
     "index.html": "/react1/index.html",
-    "main.aee10020.css.map": "/react1/static/css/main.aee10020.css.map",
+    "main.1c9da018.css.map": "/react1/static/css/main.1c9da018.css.map",
     "main.fc568a13.js.map": "/react1/static/js/main.fc568a13.js.map",
     "787.309590f4.chunk.js.map": "/react1/static/js/787.309590f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aee10020.css",
+    "static/css/main.1c9da018.css",
     "static/js/main.fc568a13.js"
   ]
 }
